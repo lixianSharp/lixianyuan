@@ -3,17 +3,16 @@ package lixianyuan.service.leavemsgandreply.impl;
 import java.util.List;
 import java.util.Map;
 
-import javax.websocket.server.ServerEndpoint;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import lixianyuan.bean.Leavemsg;
 import lixianyuan.mapper.LeavemsgMapper;
 import lixianyuan.mapper.custom.LeavemsgCustomMapper;
+import lixianyuan.service.leavemsgandreply.LeaveMsgService;
 
 @Service
-public class LeaveMsgServiceImpl {
+public class LeaveMsgServiceImpl implements LeaveMsgService{
 
 	@Autowired
 	private LeavemsgMapper leavemsgMapper;
