@@ -9,9 +9,10 @@ import org.springframework.stereotype.Service;
 import lixianyuan.bean.Reply;
 import lixianyuan.mapper.ReplyMapper;
 import lixianyuan.mapper.custom.ReplyCustomMapper;
+import lixianyuan.service.leavemsgandreply.ReplyService;
 
 @Service
-public class ReplyServiceImpl {
+public class ReplyServiceImpl implements ReplyService{
 	@Autowired
 	private ReplyMapper replyMapper;
 
