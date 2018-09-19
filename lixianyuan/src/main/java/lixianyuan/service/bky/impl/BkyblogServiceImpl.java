@@ -8,12 +8,16 @@ import org.springframework.stereotype.Service;
 
 import lixianyuan.bean.Bkyblog;
 import lixianyuan.mapper.BkyblogMapper;
+import lixianyuan.mapper.custom.BkyblogCustomMapper;
 import lixianyuan.service.bky.BkyblogService;
 @Service
 public class BkyblogServiceImpl implements BkyblogService{
 
 	@Autowired
 	private BkyblogMapper bkyblogMapper;
+	
+	@Autowired
+	private BkyblogCustomMapper bkyblogCustomMapper;
 	
 	public int addBkyblog(Bkyblog bkyblog) {
 		int insert = bkyblogMapper.insert(bkyblog);
@@ -29,12 +33,15 @@ public class BkyblogServiceImpl implements BkyblogService{
 		int result = bkyblogMapper.deleteByPrimaryKey(bkyblogId);
 		return result;
 	}
-	
-	//查询出所有，分页查询.也可以模糊查询
-	public List<Bkyblog> findAllBkyblog(Map map) {
-		// TODO Auto-generated method stub
-		return null;
+
+	public List<Bkyblog> findAllbkyBlogByCondition(Map<String, Object> map) {
+		List<Bkyblog> result = bkyblogCustomMapper.findAllbkyBlogByCondition(map);
+		return result.size()>0?result:null;
 	}
 
+	public int findAllbkyBlogCountByCondition(Map<String, Object> map) {
+		int result = bkyblogCustomMapper.findAllbkyBlogCountByCondition(map);
+		return result>0?result:0;
+	}
 
 }
