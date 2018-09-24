@@ -1,75 +1,65 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
 
-<title>李贤元个人博客</title>
-<meta name="Keywords" content="www.lixianyuan.org,lixianyuan,李贤元,李贤元博客,lixianyuan,李贤元网站">
+<head>
+<meta charset="UTF-8">
+<title>李贤元个人博客网站</title>
+<meta name="Keywords"
+	content="www.lixianyuan.org,lixianyuan,李贤元,李贤元个人博客,lixianyuan,李贤元个人网站">
 <meta name="Description" content="李贤元个人网站,李贤元博客">
 <meta name="author" content="李贤元" />
-<!-- <link href="css/index.css" rel="stylesheet"> -->
-
-<script src="/lixianyuan/js/jquery-1.8.2.js"></script>
-<script src="/lixianyuan/js/main.js"></script>
-<script src="/lixianyuan/js/lunbo.js"></script>
-	
-<link rel="stylesheet" href="../css/index.css">	
-
+<link rel="stylesheet" href="layui/css/layui.css">
+<link rel="stylesheet" type="text/css" href="frontPage/css/index.css" />
+<script src="libs/jquery-1.8.2.js"></script>
+<script src="layui/layui.js"></script>
+<script src="frontPage/js/index.js"></script>
 </head>
 
+<body>
 
-<!-- 页面加载成功之后轮播图片 -->
-<body onload="init()">
 	<header> <nav id="topnav" class="f_r">
 	<ul>
-		<a href=" index.jsp" target="_self">首页</a>
-		<a
-			href=" PathOfProcedure/index.html"
-			target="_self">程序之路</a>
-		<a href="../normalJsp/3.jsp" target="_self">闲言碎语</a>
-		<a href="../normalJsp/4.jsp" target="_self">相册</a>
-		<a href="../normalJsp/5.jsp" target="_self">学不尽</a>
-		<a href="../normalJsp/6.jsp" target="_self">留言</a>
-		<a href="../normalJsp/7.jsp" target="_self">关于</a>
-	</ul>
-	<script src="js/nav.js"></script> </nav> 
-		<a href="#" id="logo">
-			<img src="../images/logo.png"> 
-			<img src=" ../images/logo.png">
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png">
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png">
-		</a> 
-		<a href="normalJsp/myLogin.jsp" id="logo">
-			<img src=" ../images/logo.png">
-		</a> 
-		<a href="#" id="logo"> 
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png"> 
-			<img src=" ../images/logo.png">
-			<img src=" ../images/logo.png">
-		</a> 
-	</header>
+		<a href="index.jsp" target="_self">首页</a>
+		<a href="frontPage/ydynote.jsp" target="_self">有道云笔记分享</a>
+		<a href="frontPage/bkynote.jsp" target="_self">博客园博客分享</a>
+		<a href="frontPage/xysy.jsp" target="_self">闲言碎语</a>
+		<a href="frontPage/casualnote.jsp" target="_self">随笔</a>
+		<a href="frontPage/studyResource.jsp" target="_self">学习资源分享</a>
+		<a href="frontPage/photo.jsp" target="_self">相册</a>
+		<a href="frontPage/leavemsgfront.jsp" target="_self">留言</a>
+		<a href="frontPage/showleavemsg.jsp" target="_self">留言墙</a>
+		<a href="frontPage/about.jsp" target="_self">关于本站</a>
+		<a href="manage/public/index.jsp" target="_self">后台管理</a>
 
-	<!-- 标题部分结束 -->
+	</ul></header>
+	<!--<div class="layui-anim layui-anim-rotate layui-anim-loop"><img src="frontPage/images/index/logo.png"></div>-->
 
-
-	<!-- 轮播图 -->
-	<div id="container">
-		<div id="lunbo">
-			<a id="lunboA" href="#" target="_self"> <img id="luboid"
-				src="/lixianyuan/ ../images/1.jpg" />
-			</a>
+	<!--轮播图-->
+	<div class="layui-carousel" id="test1">
+		<div carousel-item>
+			<div>
+				<img src="frontPage/images/index/4.jpg" class="lunboImg" />
+			</div>
+			<div>
+				<img src="frontPage/images/index/1.jpg" class="lunboImg" />
+			</div>
+			<div>
+				<img src="frontPage/images/index/3.jpg" class="lunboImg" />
+			</div>
+			<div>
+				<img src="frontPage/images/index/5.jpg" class="lunboImg" />
+			</div>
+			<div>
+				<img src="frontPage/images/index/6.jpg" class="lunboImg" />
+			</div>
+			<div>
+				<img src="frontPage/images/index/7.jpg" class="lunboImg" />
+			</div>
 		</div>
 	</div>
+	<!-- 轮播图结束 -->
 
 	<div class="motto">
 		<p>这个世界上有很多事情，你以为明天一定可以再继续做的； 有很多人，你以为明天一定可以再见到面的；
@@ -84,35 +74,34 @@
 		<ul class="template">
 			<section>
 			<h2>Flipped</h2>
-			<img src=" ../images/01.jpg">
+			<img src="frontPage/images/index/01.jpg">
 			<p>不要因为也许会改变就不肯说那句美丽的誓言；不要因为也许会分离就不敢求一次倾心的相遇。 --席慕蓉 《印记》</p>
 			<h4>
-				<a href="../normalJsp/3.jsp"><b>阅读</b><span>更多>></span></a>
+				<a href="frontPage/casualnote.jsp"><b>阅读</b><span>更多>></span></a>
 			</h4>
 			</section>
 			<section>
 			<h2>Melancholy</h2>
-			<img src=" ../images/02.jpg">
+			<img src="frontPage/images/index/02.jpg">
 			<p>
 				在一回首间，才忽然发现，原来，我一生的种种努力，不过只为了周遭的人对我满意而已。为了搏得他人的称许与微笑，我战战兢兢地将自己套入所有的模式所有的桎梏。走到途中才忽然发现，我只剩下一副模糊的面目，和一条不能回头的路&nbsp;--席慕蓉《独白》</p>
 			<h4>
-				<a href="../normalJsp/3.jsp"><b>阅读</b><span>更多>></span></a>
+				<a href="frontPage/casualnote.jsp"><b>阅读</b><span>更多>></span></a>
 			</h4>
 			</section>
 			<section>
 			<h2>Sunshine</h2>
-			<img src=" ../images/03.jpg">
+			<img src="frontPage/images/index/04.jpg">
 			<p>
 				我喜欢回顾，是因为我不喜欢忘记。我总认为，在世间，有些人、有些事、有些时刻似乎都有一种特定的安排，在当时也许不觉得，但是在以后回想起来，却都有一种深意。我有过许多美丽的时刻，实在舍不得将它们忘记。
 				--席慕容 《透明的哀伤》</p>
 			<h4>
-				<a href="。。/normalJsp/3.jsp"><b>阅读</b><span>更多>></span></a>
+				<a href="frontPage/casualnote.jsp"><b>阅读</b><span>更多>></span></a>
 			</h4>
 			</section>
 		</ul>
 	</div>
 	<!-- 三栏布局结束End of the three column layout -->
-
 
 	<div class="idea">
 		<p>脚下的路，如果不是你自己的选择，那这旅程的终点在哪儿，也没人知道，你会走到哪，会碰到谁，都不一定。</p>
@@ -120,28 +109,16 @@
 
 	<!-- 底部的最后一栏 -->
 	<footer>
-	<div id="footId" style="position:fixed; bottom:0;">
-		<ul>
-			<p align="center">
-				CopyRight &copy 2017  李贤元博客
-				<a  href="http://www.miitbeian.gov.cn/">闽ICP备17018144号</a>
-			</p>
-		</ul>
-	</div>
+		<div id="footId" class="footerDivClass">
+			<ul>
+				<p align="center">
+					CopyRight &copy 2017~2018 李贤元个人博客网站 <a
+						href="http://www.miitbeian.gov.cn/">闽ICP备17018144号</a>
+				</p>
+			</ul>
+		</div>
 	</footer>
+
 </body>
-<!--  JavaScript代码部分  -->
-
-
-
- <script type="text/javascript">
-	var i = 1;
-	function init() {
-		setInterval(changeImage, 2000);
-	}
-	changeImage();
-	lunboHref();
-</script> 
-
 
 </html>
