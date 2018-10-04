@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -10,25 +10,25 @@
 		<meta name="Keywords" content="www.lixianyuan.org,lixianyuan,李贤元,李贤元个人博客,lixianyuan,李贤元个人网站">
 		<meta name="Description" content="李贤元个人网站,李贤元博客">
 		<meta name="author" content="李贤元" />
-		<link rel="stylesheet" href="../layui/css/layui.css">
-		<script src="../libs/jquery-1.8.2.js"></script>
-		<script src="../layui/layui.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/xysy.css" />
-		<script src="js/xysy.js"></script>
+		<link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
+		<script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
+		<script src="${pageContext.request.contextPath }/layui/layui.js"></script>
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/frontPage/css/xysy.css" />
+		<script src="${pageContext.request.contextPath }/frontPage/js/xysy.js"></script>
 		<!-- 底部footer样式 -->
-	    <link rel="stylesheet" href="css/footer.css">
+	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/footer.css">
 	</head>
 
 	<body>
 		
 		<div class="topnews">
-			<a href="../index.jsp" class="layui-btn  layui-btn-radius layui-btn-normal"><i class="layui-icon">&#xe65c;返回</i></a> 
+			<a href="${pageContext.request.contextPath }/index.jsp" class="layui-btn  layui-btn-radius layui-btn-normal"><i class="layui-icon">&#xe65c;返回</i></a> 
 			<br /><br />
 			<h2>
 			<span></span>
 			</h2>
 			<div class="blogs">
-				<figure> <img src="images/xysy/01.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/01.jpg"> </figure>
 				<ul>
 					<h3>
 					Flipped
@@ -43,11 +43,11 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/02.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/02.jpg"> </figure>
 				<ul>
 					<h3>
 					Serenity
-				</h3>
+					</h3>
 					<p>
 						<font size="3px"> &nbsp;&nbsp;&nbsp;一直在盼望着一段美丽的爱 所以我毫不犹疑地将你舍弃 流浪的途中我不断寻觅 却没料到 回首之时 年轻的你 从未稍离 从未稍离的你在我心中 春天来时便反复地吟唱 那滨江路上的灰沙炎日 那丽水街前的一地月光 那清晨园中为谁摘下的茉莉 那渡船头上风里翻飞的裙裳 在风里翻飞 然后纷纷坠落 岁月深埋在土中便成琥珀 在灰色的黎明前我怅然回顾 亲爱的朋友啊 难道鸟必要自焚才能成为凤凰 难道青春必要愚昧 爱 必得忧伤 ----席慕蓉 《七里香之千年的愿望》 </font>
 					</p>
@@ -57,11 +57,11 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/03.jpg"> </figure>
+				<figure><img src="${pageContext.request.contextPath }/frontPage/images/xysy/03.jpg"></figure>
 				<ul>
 					<h3>
-					Aurora
-				</h3>
+						Aurora
+					</h3>
 					<p align="center">
 						<font size="6px">
 							&nbsp;&nbsp;&nbsp;&nbsp;草在结它的种子，风在摇它的叶子。<br/><br/> 我们站着，不说话，就十分美好。
@@ -74,7 +74,7 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/04.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/04.jpg"> </figure>
 				<ul>
 					<h3>
 					Petricho
@@ -97,7 +97,7 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/05.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/05.jpg"> </figure>
 				<ul>
 					<h3>
 					Melancholy
@@ -110,7 +110,7 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/06.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/06.jpg"> </figure>
 				<ul>
 					<h3>
 					Azure
@@ -122,7 +122,7 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/07.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/07.jpg"> </figure>
 				<ul>
 					<h3>
 					Faith
@@ -139,7 +139,7 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/08.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/08.jpg"> </figure>
 				<ul>
 					<h3>
 					Aparesse
@@ -160,7 +160,7 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/09.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/09.jpg"> </figure>
 				<ul>
 					<h3>
 					Butterfly
@@ -176,7 +176,7 @@
 				</ul>
 			</div>
 			<div class="blogs">
-				<figure> <img src="images/xysy/11.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/11.jpg"> </figure>
 				<ul>
 					<h3>
 					HelloWorld
@@ -200,7 +200,7 @@
 			</div>
 
 			<div class="blogs">
-				<figure> <img src="images/xysy/yaoyao.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/yaoyao.jpg"> </figure>
 				<ul>
 					<h3>
 					Nooreshho
@@ -229,7 +229,7 @@
 			</div>
 
 			<div class="blogs">
-				<figure> <img src="images/xysy/10.jpg"> </figure>
+				<figure> <img src="${pageContext.request.contextPath }/frontPage/images/xysy/10.jpg"> </figure>
 				<ul>
 					<h3>
 					Shine

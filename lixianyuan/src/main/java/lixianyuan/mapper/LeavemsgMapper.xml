@@ -6,6 +6,7 @@
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="email" property="email" jdbcType="VARCHAR" />
     <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="leavetime" property="leavetime" jdbcType="TIMESTAMP" />
     <result column="ipaddress" property="ipaddress" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -67,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    leavemsgid, name, email, content, ipaddress
+    leavemsgid, name, email, content, leavetime, ipaddress
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lixianyuan.bean.LeavemsgExample" >
     select
@@ -101,9 +102,11 @@
   </delete>
   <insert id="insert" parameterType="lixianyuan.bean.Leavemsg" >
     insert into leavemsg (leavemsgid, name, email, 
-      content, ipaddress)
+      content, leavetime, ipaddress
+      )
     values (#{leavemsgid,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
-      #{content,jdbcType=VARCHAR}, #{ipaddress,jdbcType=VARCHAR})
+      #{content,jdbcType=VARCHAR}, #{leavetime,jdbcType=TIMESTAMP}, #{ipaddress,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="lixianyuan.bean.Leavemsg" >
     insert into leavemsg
@@ -119,6 +122,9 @@
       </if>
       <if test="content != null" >
         content,
+      </if>
+      <if test="leavetime != null" >
+        leavetime,
       </if>
       <if test="ipaddress != null" >
         ipaddress,
@@ -136,6 +142,9 @@
       </if>
       <if test="content != null" >
         #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="leavetime != null" >
+        #{leavetime,jdbcType=TIMESTAMP},
       </if>
       <if test="ipaddress != null" >
         #{ipaddress,jdbcType=VARCHAR},
@@ -163,6 +172,9 @@
       <if test="record.content != null" >
         content = #{record.content,jdbcType=VARCHAR},
       </if>
+      <if test="record.leavetime != null" >
+        leavetime = #{record.leavetime,jdbcType=TIMESTAMP},
+      </if>
       <if test="record.ipaddress != null" >
         ipaddress = #{record.ipaddress,jdbcType=VARCHAR},
       </if>
@@ -177,6 +189,7 @@
       name = #{record.name,jdbcType=VARCHAR},
       email = #{record.email,jdbcType=VARCHAR},
       content = #{record.content,jdbcType=VARCHAR},
+      leavetime = #{record.leavetime,jdbcType=TIMESTAMP},
       ipaddress = #{record.ipaddress,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -194,6 +207,9 @@
       <if test="content != null" >
         content = #{content,jdbcType=VARCHAR},
       </if>
+      <if test="leavetime != null" >
+        leavetime = #{leavetime,jdbcType=TIMESTAMP},
+      </if>
       <if test="ipaddress != null" >
         ipaddress = #{ipaddress,jdbcType=VARCHAR},
       </if>
@@ -205,6 +221,7 @@
     set name = #{name,jdbcType=VARCHAR},
       email = #{email,jdbcType=VARCHAR},
       content = #{content,jdbcType=VARCHAR},
+      leavetime = #{leavetime,jdbcType=TIMESTAMP},
       ipaddress = #{ipaddress,jdbcType=VARCHAR}
     where leavemsgid = #{leavemsgid,jdbcType=VARCHAR}
   </update>

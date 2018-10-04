@@ -1,0 +1,22 @@
+body{
+  background: #333;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+#menu{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 9;
+}
+
+#pop{
+  border: none;
+  padding: 10px 20px;
+  background: #fff;
+}
+#pop:hover{
+  background: #ddd;
+  cursor: pointer;
+}

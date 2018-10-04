@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -9,21 +10,21 @@
 		<meta name="Keywords" content="www.lixianyuan.org,lixianyuan,李贤元,李贤元个人博客,lixianyuan,李贤元个人网站">
 		<meta name="Description" content="李贤元个人网站,李贤元博客">
 		<meta name="author" content="李贤元" />
-		<link rel="stylesheet" href="../layui/css/layui.css">
-		<script src="../libs/jquery-1.8.2.js"></script>
-		<script src="../layui/layui.js"></script>
+		<link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
+		<script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
+		<script src="${pageContext.request.contextPath }/layui/layui.js"></script>
 		
-		<link rel="stylesheet" type="text/css" href="../show/css/photo.css"/>
+		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/frontPage/css/photo.css"/>
 		<!-- 底部footer样式 -->
-	    <link rel="stylesheet" href="css/footer.css">
+	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/footer.css">
 	</head>
 
 	<body>
 		<br />
-		<a href="../index.jsp" class="layui-btn  layui-btn-radius layui-btn-normal"><i class="layui-icon">&#xe65c;返回</i></a>
-		<a href="photo2.jsp" class="layui-btn  layui-btn-radius layui-btn-normal">点击这里查看相册2</a></h3>
+		<a href="${pageContext.request.contextPath }/index.jsp" class="layui-btn  layui-btn-radius layui-btn-normal"><i class="layui-icon">&#xe65c;返回</i></a>
+		<a href="${pageContext.request.contextPath }/frontPage/photo2.jsp" class="layui-btn  layui-btn-radius layui-btn-normal">点击这里查看相册2</a></h3>
 		<br /><br />
-		<video id="videoID" style="display:block; margin:0 auto;" src="video/video.mp4" loop autoplay="true">
+		<video id="videoID" style="display:block; margin:0 auto;" src="${pageContext.request.contextPath }/frontPage/video/video.mp4" loop autoplay="true">
 			your browser does not support the video tag
 		</video>
 		

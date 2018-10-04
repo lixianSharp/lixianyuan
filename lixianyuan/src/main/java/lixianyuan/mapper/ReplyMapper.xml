@@ -5,6 +5,7 @@
     <id column="replyid" property="replyid" jdbcType="VARCHAR" />
     <result column="replyname" property="replyname" jdbcType="VARCHAR" />
     <result column="replycontent" property="replycontent" jdbcType="VARCHAR" />
+    <result column="replytime" property="replytime" jdbcType="TIMESTAMP" />
     <result column="leavemsgid" property="leavemsgid" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -66,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    replyid, replyname, replycontent, leavemsgid
+    replyid, replyname, replycontent, replytime, leavemsgid
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lixianyuan.bean.ReplyExample" >
     select
@@ -100,9 +101,9 @@
   </delete>
   <insert id="insert" parameterType="lixianyuan.bean.Reply" >
     insert into reply (replyid, replyname, replycontent, 
-      leavemsgid)
+      replytime, leavemsgid)
     values (#{replyid,jdbcType=VARCHAR}, #{replyname,jdbcType=VARCHAR}, #{replycontent,jdbcType=VARCHAR}, 
-      #{leavemsgid,jdbcType=VARCHAR})
+      #{replytime,jdbcType=TIMESTAMP}, #{leavemsgid,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="lixianyuan.bean.Reply" >
     insert into reply
@@ -115,6 +116,9 @@
       </if>
       <if test="replycontent != null" >
         replycontent,
+      </if>
+      <if test="replytime != null" >
+        replytime,
       </if>
       <if test="leavemsgid != null" >
         leavemsgid,
@@ -129,6 +133,9 @@
       </if>
       <if test="replycontent != null" >
         #{replycontent,jdbcType=VARCHAR},
+      </if>
+      <if test="replytime != null" >
+        #{replytime,jdbcType=TIMESTAMP},
       </if>
       <if test="leavemsgid != null" >
         #{leavemsgid,jdbcType=VARCHAR},
@@ -153,6 +160,9 @@
       <if test="record.replycontent != null" >
         replycontent = #{record.replycontent,jdbcType=VARCHAR},
       </if>
+      <if test="record.replytime != null" >
+        replytime = #{record.replytime,jdbcType=TIMESTAMP},
+      </if>
       <if test="record.leavemsgid != null" >
         leavemsgid = #{record.leavemsgid,jdbcType=VARCHAR},
       </if>
@@ -166,6 +176,7 @@
     set replyid = #{record.replyid,jdbcType=VARCHAR},
       replyname = #{record.replyname,jdbcType=VARCHAR},
       replycontent = #{record.replycontent,jdbcType=VARCHAR},
+      replytime = #{record.replytime,jdbcType=TIMESTAMP},
       leavemsgid = #{record.leavemsgid,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -180,6 +191,9 @@
       <if test="replycontent != null" >
         replycontent = #{replycontent,jdbcType=VARCHAR},
       </if>
+      <if test="replytime != null" >
+        replytime = #{replytime,jdbcType=TIMESTAMP},
+      </if>
       <if test="leavemsgid != null" >
         leavemsgid = #{leavemsgid,jdbcType=VARCHAR},
       </if>
@@ -190,6 +204,7 @@
     update reply
     set replyname = #{replyname,jdbcType=VARCHAR},
       replycontent = #{replycontent,jdbcType=VARCHAR},
+      replytime = #{replytime,jdbcType=TIMESTAMP},
       leavemsgid = #{leavemsgid,jdbcType=VARCHAR}
     where replyid = #{replyid,jdbcType=VARCHAR}
   </update>

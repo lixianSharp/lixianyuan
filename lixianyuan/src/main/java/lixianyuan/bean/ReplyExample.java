@@ -1,6 +1,7 @@
 package lixianyuan.bean;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class ReplyExample {
@@ -311,6 +312,66 @@ public class ReplyExample {
 
         public Criteria andReplycontentNotBetween(String value1, String value2) {
             addCriterion("replycontent not between", value1, value2, "replycontent");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeIsNull() {
+            addCriterion("replytime is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeIsNotNull() {
+            addCriterion("replytime is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeEqualTo(Date value) {
+            addCriterion("replytime =", value, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeNotEqualTo(Date value) {
+            addCriterion("replytime <>", value, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeGreaterThan(Date value) {
+            addCriterion("replytime >", value, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("replytime >=", value, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeLessThan(Date value) {
+            addCriterion("replytime <", value, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeLessThanOrEqualTo(Date value) {
+            addCriterion("replytime <=", value, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeIn(List<Date> values) {
+            addCriterion("replytime in", values, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeNotIn(List<Date> values) {
+            addCriterion("replytime not in", values, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeBetween(Date value1, Date value2) {
+            addCriterion("replytime between", value1, value2, "replytime");
+            return (Criteria) this;
+        }
+
+        public Criteria andReplytimeNotBetween(Date value1, Date value2) {
+            addCriterion("replytime not between", value1, value2, "replytime");
             return (Criteria) this;
         }
 

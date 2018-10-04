@@ -15,7 +15,7 @@
   			and ydyblog.ydyblogId = #{ydyblogId}
   		</if>
   		<if test="title!=null and title!='' ">
-  			and ydyblog.title = #{title}
+  			and ydyblog.title like "%"#{title}"%"
   		</if>
   		<if test="url!=null and url!='' ">
   			and ydyblog.url = #{url}

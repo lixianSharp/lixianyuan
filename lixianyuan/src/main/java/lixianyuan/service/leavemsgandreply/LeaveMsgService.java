@@ -46,6 +46,12 @@ public interface LeaveMsgService {
 	 * 	每一个map代表mysql中的一行数据
 	 * @return 留言及其对应的回复留言
 	 */
-	public List<Map<String,Object>> findleaveMsgAndReply();
+	public List<Map<String,Object>> findleaveMsgAndReply(Map<String,Object> map);
+	
+	/**
+	 * 查询出所有的留言及其对应的回复留言的总条数
+	 * @return 留言及其对应的回复留言总条数
+	 */
+	public int findleaveMsgAndReplyCount();
 	
 }

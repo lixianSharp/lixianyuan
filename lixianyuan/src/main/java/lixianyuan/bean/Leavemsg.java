@@ -1,5 +1,7 @@
 package lixianyuan.bean;
 
+import java.util.Date;
+
 public class Leavemsg {
     private String leavemsgid;
 
@@ -8,6 +10,8 @@ public class Leavemsg {
     private String email;
 
     private String content;
+
+    private Date leavetime;
 
     private String ipaddress;
 
@@ -41,6 +45,14 @@ public class Leavemsg {
 
     public void setContent(String content) {
         this.content = content == null ? null : content.trim();
+    }
+
+    public Date getLeavetime() {
+        return leavetime;
+    }
+
+    public void setLeavetime(Date leavetime) {
+        this.leavetime = leavetime;
     }
 
     public String getIpaddress() {

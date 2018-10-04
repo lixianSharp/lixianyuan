@@ -16,7 +16,7 @@
 			and bkyblog.bkyblogId = #{bkyblogId}
 		</if>
 		<if test="title!=null and title!='' ">
-			and bkyblog.title like '%${title}%'
+			and bkyblog.title like "%"#{title}"%"
 		</if>
 		<if test="url!=null and url!='' ">
 			and bkyblog.url = #{url}
@@ -34,7 +34,7 @@
 	</select>
 	
 	<!-- 根据条件查询符合的所有博客园笔记的总条数 -->
-	<select id="findAllbkyBlogCountByCondition" parameterMap="map" resultType="int">
+	<select id="findAllbkyBlogCountByCondition" parameterType="map" resultType="int">
 		SELECT count(*) FROM bkyblog
 		<where>
 			<include refid="sql_where_bkyblog"></include>

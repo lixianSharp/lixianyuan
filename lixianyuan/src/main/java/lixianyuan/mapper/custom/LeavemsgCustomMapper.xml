@@ -10,22 +10,22 @@
   		</if>
   	</sql>
   	
-  	
+  	<!-- 查询条件 -->
   	<sql id="sql_where_leavemsg">
   		<if test="leavemsgid!=null and leavemsgid!=''">
   			and leavemsg.leavemsgid = #{leavemsgid}
   		</if>
   		<if test="name!=null and name!=''">
-  			and leavemsg.name like '%${name}%'
+  			and leavemsg.name like "%"#{name}"%"
   		</if>
   		<if test="email!=null and email!=''">
-  			and leavemsg.email like '%${email}%'
+  			and leavemsg.email like "%"#{email}"%"
   		</if>
   		<if test="content!=null and content!=''">
-  			and leavemsg.content like '%${content}%'
+  			and leavemsg.content like "%"#{content}"%"
   		</if>
   		<if test="ipaddress!=null and ipaddress!=''">
-  			and leavemsg.ipaddress like '%${ipaddress}%'
+  			and leavemsg.ipaddress like "%"#{ipaddress}"%"
   		</if>
   	</sql>
 

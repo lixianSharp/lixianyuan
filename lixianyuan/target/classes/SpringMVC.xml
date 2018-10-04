@@ -35,6 +35,7 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+	
 
     <!-- 5.视图解释器 -->
     <bean

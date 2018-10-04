@@ -1,11 +1,15 @@
 package lixianyuan.bean;
 
+import java.util.Date;
+
 public class Reply {
     private String replyid;
 
     private String replyname;
 
     private String replycontent;
+
+    private Date replytime;
 
     private String leavemsgid;
 
@@ -31,6 +35,14 @@ public class Reply {
 
     public void setReplycontent(String replycontent) {
         this.replycontent = replycontent == null ? null : replycontent.trim();
+    }
+
+    public Date getReplytime() {
+        return replytime;
+    }
+
+    public void setReplytime(Date replytime) {
+        this.replytime = replytime;
     }
 
     public String getLeavemsgid() {

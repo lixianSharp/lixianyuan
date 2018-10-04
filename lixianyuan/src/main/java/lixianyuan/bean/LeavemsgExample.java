@@ -1,6 +1,7 @@
 package lixianyuan.bean;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class LeavemsgExample {
@@ -381,6 +382,66 @@ public class LeavemsgExample {
 
         public Criteria andContentNotBetween(String value1, String value2) {
             addCriterion("content not between", value1, value2, "content");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeIsNull() {
+            addCriterion("leavetime is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeIsNotNull() {
+            addCriterion("leavetime is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeEqualTo(Date value) {
+            addCriterion("leavetime =", value, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeNotEqualTo(Date value) {
+            addCriterion("leavetime <>", value, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeGreaterThan(Date value) {
+            addCriterion("leavetime >", value, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeGreaterThanOrEqualTo(Date value) {
+            addCriterion("leavetime >=", value, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeLessThan(Date value) {
+            addCriterion("leavetime <", value, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeLessThanOrEqualTo(Date value) {
+            addCriterion("leavetime <=", value, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeIn(List<Date> values) {
+            addCriterion("leavetime in", values, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeNotIn(List<Date> values) {
+            addCriterion("leavetime not in", values, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeBetween(Date value1, Date value2) {
+            addCriterion("leavetime between", value1, value2, "leavetime");
+            return (Criteria) this;
+        }
+
+        public Criteria andLeavetimeNotBetween(Date value1, Date value2) {
+            addCriterion("leavetime not between", value1, value2, "leavetime");
             return (Criteria) this;
         }
 

@@ -1,3 +1,6 @@
+body{
+	background-image: url("../images/background/bg.jpg");
+}
 form{
 	margin-left: 20%;
 	margin-top: 5%;
