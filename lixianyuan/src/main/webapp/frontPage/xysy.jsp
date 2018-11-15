@@ -10,13 +10,13 @@
 		<meta name="Keywords" content="www.lixianyuan.org,lixianyuan,李贤元,李贤元个人博客,lixianyuan,李贤元个人网站">
 		<meta name="Description" content="李贤元个人网站,李贤元博客">
 		<meta name="author" content="李贤元" />
-		<link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
-		<script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
-		<script src="${pageContext.request.contextPath }/layui/layui.js"></script>
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/frontPage/css/xysy.css" />
-		<script src="${pageContext.request.contextPath }/frontPage/js/xysy.js"></script>
+		<link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
 		<!-- 底部footer样式 -->
 	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/footer.css">
+		<script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
+		<script src="${pageContext.request.contextPath }/layui/layui.js"></script>
+		<script src="${pageContext.request.contextPath }/frontPage/js/xysy.js"></script>
 	</head>
 
 	<body>

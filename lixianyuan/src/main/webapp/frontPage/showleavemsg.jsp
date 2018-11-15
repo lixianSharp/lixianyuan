@@ -10,18 +10,19 @@
 		<meta name="Keywords" content="www.lixianyuan.org,lixianyuan,李贤元,李贤元个人博客,lixianyuan,李贤元个人网站">
 		<meta name="Description" content="李贤元个人网站,李贤元博客">
 		<meta name="author" content="李贤元" />
+		<!-- 底部footer样式 -->
+	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/footer.css">
+	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/showleavemsg.css">
+	    
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
 		<script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
 		<script src="${pageContext.request.contextPath }/layui/layui.js"></script>
-		<script type="text/javascript" src="${pageContext.request.contextPath }/frontPage/js/showleavemsg.js"></script>
-		<!-- 底部footer样式 -->
-	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/footer.css">
-	    
-	    
-	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/showleavemsg.css">
+		
 	    <script type="text/javascript">
 		    contextPath = "${pageContext.request.contextPath}";
 		</script>
+		<!-- 自己写的js -->
+		<script type="text/javascript" src="${pageContext.request.contextPath }/frontPage/js/showleavemsg.js"></script>
 	</head>
 
 		<body>
