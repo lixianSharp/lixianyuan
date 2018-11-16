@@ -8,12 +8,13 @@
     <meta name="Keywords"	content="www.lixianyuan.org,lixianyuan,李贤元,李贤元个人博客,lixianyuan,李贤元个人网站">
 	<meta name="Description" content="李贤元个人网站,李贤元博客">
 	<meta name="author" content="李贤元" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
+    
 	
     <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/footer.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/ydyblogMenu/rightShow.css">
+    <script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
     <script src="${pageContext.request.contextPath }/layui/layui.js"></script>
-	<script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
    
     <script type="text/javascript">
 		    contextPath = "${pageContext.request.contextPath}";
@@ -188,8 +189,7 @@
   			
   			<!-- 右侧的 -->
   			<div style="width:75%;float: right;">
-  				<!--分页的div-->
-				<div id="test1"></div> 
+  				 
   				<!-- 显示数据的表格  -->
 				<table class="layui-table" style="width:80%;height: 80%">
 					<!-- <colgroup>
@@ -210,8 +210,9 @@
 						</tr> 
 					</tbody>
 				</table>
-				
-				
+				<!--分页的div-->
+				<div id="test1"></div>
+				<br/>
 				<!-- 存放当前页页号  默认值为第一页 -->
 				<input id="currentPage" type="hidden" value="1"/>
 				<!-- 每页显示的记录数  默认显示10条-->

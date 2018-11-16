@@ -239,7 +239,7 @@
 						<b>
 					<font size="4px" color="blue"> 
 					&nbsp;&nbsp;&nbsp;&nbsp;
-					世上只有一本书就是你，别的书，都是它的注释。
+					世上只有一本书就是<a href="${pageContext.request.contextPath }/frontPage/lqx/lqx2/lqx2.jsp" target="_self"><font color="#0000FF">你</font></a>，别的书，都是它的注释。
 						 ——顾城 《顾城哲思录》 
 					</font>
 				</b>

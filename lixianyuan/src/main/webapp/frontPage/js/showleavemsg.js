@@ -6,7 +6,7 @@ $(function() {
 		var layer = layui.layer;
 	});
 	
-	 packlaypage_render(1, 10, 5);
+	 //packlaypage_render(1, 10, 5);
 	// 页面加载的时候查询出所有博客信息
 	findAllLeavemsg();
 });
@@ -75,7 +75,7 @@ function findAllLeavemsg() {
 			}
 		},
 		error : function() {
-			alert("出错了!");
+			alert("哈喽哈喽，刷新一下嘛!");
 			return false;
 		}
 	});

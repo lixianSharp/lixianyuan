@@ -13,9 +13,9 @@
 		<!-- 底部footer样式 -->
 	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/footer.css">
 	    <link rel="stylesheet" href="${pageContext.request.contextPath }/frontPage/css/showleavemsg.css">
-	    
+	    <script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/layui/css/layui.css">
-		<script src="${pageContext.request.contextPath }/libs/jquery-1.8.2.js"></script>
+		
 		<script src="${pageContext.request.contextPath }/layui/layui.js"></script>
 		
 	    <script type="text/javascript">
@@ -28,12 +28,12 @@
 		<body>
 		<a href="${pageContext.request.contextPath }/index.jsp" class="layui-btn  layui-btn-radius layui-btn-normal"><i class="layui-icon">&#xe65c;返回</i></a>
 		<div class="ctspan" id="divContent">
-			<div class="ctspan">
+			<!-- <div class="ctspan">
 				 <span class="layui-btn layui-btn-normal layui-btn-radius span1">百搭按钮</span>
 			</div>
 			<div  class="ctspan">
 				 <span class="layui-btn layui-btn-normal layui-btn-radius span2" >百搭按钮</span>
-			</div>
+			</div> -->
 			
 		</div>
 		

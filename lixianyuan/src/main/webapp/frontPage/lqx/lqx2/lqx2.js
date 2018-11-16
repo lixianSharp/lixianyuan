@@ -5,6 +5,13 @@ $(function() {
 	});
 	var video = document.getElementById("videoID");
 	video.controls = false;
+	
+	//取消鼠标移动到视频上时的鼠标右键功能
+	$('#videoID2').bind('contextmenu', function() {
+		return false;
+	});
+	var video = document.getElementById("videoID2");
+	video.controls = false;
 
 	//轮播图
 	layui.use('carousel', function() {

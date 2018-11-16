@@ -6,7 +6,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>you am i</title>
+		<title>You Am I</title>
 		<meta name="Keywords" content="www.lixianyuan.org,lixianyuan,李贤元,李贤元个人博客,lixianyuan,李贤元个人网站">
 		<meta name="Description" content="李贤元个人网站,李贤元博客">
 		<meta name="author" content="李贤元" />
@@ -21,7 +21,6 @@
 
 	<body>
 		<a href="${pageContext.request.contextPath }/index.jsp" class="layui-btn  layui-btn-radius layui-btn-normal"><i class="layui-icon">&#xe65c;返回首页</i></a>
-		<a href="xqbug/lqx2.jsp" class="layui-btn  layui-btn-radius layui-btn-normal"><i class="layui-icon">More&#xe65b;</i></a>
 		<!--轮播图-->
 		<div class="layui-carousel lunbodiv" id="test1">
 			<div carousel-item>
@@ -41,7 +40,7 @@
 					<img src="005.jpg" class="lunboImg" />
 				</div>
 				<div>
-					<img src="006.png" class="lunboImg" />
+					<img src="006.jpg" class="lunboImg" />
 				</div>
 				<div>
 					<img src="007.jpg" class="lunboImg" />
@@ -80,17 +79,11 @@
 		</div>
 		<!-- 轮播图结束 -->
 		<br /><br /><br /><br />
-		<video id="videoID" class="videoClass" src="qx1.mp4" loop autoplay="true">
+		<video id="videoID" class="videoClass" src="xqqxkl.mp4" loop autoplay="true">
 			your browser does not support the video tag
 		</video>
 		<br/>
 		
-		<br /><br />
-		<video id="videoID2" class="videoClass" src="qxbug.mp4" loop autoplay="true">
-			your browser does not support the video tag
-		</video>
-		<br/>
-
 		
 	</body>
 
