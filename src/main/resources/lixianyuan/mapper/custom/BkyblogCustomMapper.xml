@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lixianyuan.mapper.custom.BkyblogCustomMapper">
+	
+	<!-- 分页条件  currentPage:当前页页号，currentCount每页显示的记录数-->
+  	<sql id="limit_page">
+  		<!-- test中的currentPage的条件多写一个就会出错，只写一个就不会，有点奇怪 -->
+  		<if test="currentPage!=null">
+  			LIMIT #{currentPage},#{currentCount}
+  		</if>
+  	</sql>
+
+	<!-- 查询条件 -->
+	<sql id="sql_where_bkyblog">
+		<if test="bkyblogId!=null and bkyblogId!='' ">
+			and bkyblog.bkyblogId = #{bkyblogId}
+		</if>
+		<if test="title!=null and title!='' ">
+			and bkyblog.title like "%"#{title}"%"
+		</if>
+		<if test="url!=null and url!='' ">
+			and bkyblog.url = #{url}
+		</if>
+	</sql>
+	
+	<!-- 根据条件查询符合的所有博客园笔记 -->
+	<select id="findAllbkyBlogByCondition" parameterType="map" resultType="lixianyuan.bean.Bkyblog">
+		SELECT * FROM bkyblog
+		<where>
+			<include refid="sql_where_bkyblog"></include>
+		</where>
+		order by title desc
+		<include refid="limit_page"></include>
+	</select>
+	
+	<!-- 根据条件查询符合的所有博客园笔记的总条数 -->
+	<select id="findAllbkyBlogCountByCondition" parameterType="map" resultType="int">
+		SELECT count(*) FROM bkyblog
+		<where>
+			<include refid="sql_where_bkyblog"></include>
+		</where>
+	</select>
+
+
+</mapper>

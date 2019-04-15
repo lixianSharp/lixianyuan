@@ -1,0 +1,26 @@
+#footId {
+	width: 100%;
+	height: 40px;
+	background: gray;
+	border-top: 1px solid #727272;
+}
+#footId ul {
+	width: 980px;
+	height: 40px;
+	margin: 0 auto;
+	line-height: 40px
+}
+
+#footId ul p, #footer-bottom ul p a {
+	color: #fff;
+	text-align:center;
+}
+
+#foot ul p a:hover {
+	text-decoration: underline
+}		
+	
+
+.footerDivClass{
+	position:fixed; bottom:0;
+}

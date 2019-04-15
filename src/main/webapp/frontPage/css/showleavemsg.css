@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body{
+	background-image: url("../images/background/bg.jpg");
+}
+.ctspan{
+	width:100%;
+}
+
+.span1{
+	margin-left: 15%;
+}
+.span2{
+	margin-left: 35%;
+}
+
