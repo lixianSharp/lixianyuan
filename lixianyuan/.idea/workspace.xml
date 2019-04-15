@@ -6,117 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8266f83-5c31-4843-8237-470cd69852c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lixianyuan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Bkyblog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Bkyblog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/BkyblogExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Casualnote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Casualnote.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/CasualnoteExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Gossip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Gossip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/GossipExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Leavemsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Leavemsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/LeavemsgExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Photo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Photo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/PhotoExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Reply.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Reply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/ReplyExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysPermissionExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysRolePermissionExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/SysUserRoleExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Ydyblog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/Ydyblog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/bean/YdyblogExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/controller/bkyblog/BkyblogAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/controller/bkyblog/BkyblogAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/controller/leavemsg/LeaveMsgAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/controller/leavemsg/LeaveMsgAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/controller/pageredirect/PageRedirectAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/controller/pageredirect/PageRedirectAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/controller/replymsg/ReplymsgAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/controller/replymsg/ReplymsgAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/controller/ydyblog/YdyblogAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/controller/ydyblog/YdyblogAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/docsql/lixianyuanorg.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/BkyblogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/BkyblogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/CasualnoteMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/CasualnoteMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/GossipMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/GossipMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/LeavemsgMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/LeavemsgMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/PhotoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/PhotoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/ReplyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/ReplyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysPermissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysPermissionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysRolePermissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysRolePermissionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysUserRoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/SysUserRoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/YdyblogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/YdyblogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/BkyblogCustomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/BkyblogCustomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/CasualnoteCustomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/CasualnoteCustomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/GossipCustomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/GossipCustomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/LeavemsgCustomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/LeavemsgCustomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/PhotoCustomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/PhotoCustomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/ReplyCustomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/ReplyCustomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/YdyblogCustomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/YdyblogCustomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/mapper/custom/attention.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/bky/BkyblogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/bky/BkyblogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/bky/impl/BkyblogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/bky/impl/BkyblogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/casualnote/CasualnoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/casualnote/CasualnoteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/casualnote/impl/CasualnoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/casualnote/impl/CasualnoteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/LeaveMsgService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/LeaveMsgService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/ReplyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/ReplyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/impl/LeaveMsgServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/impl/LeaveMsgServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/impl/ReplyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/leavemsgandreply/impl/ReplyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/photo/PhotoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/photo/PhotoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/photo/impl/PhotoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/photo/impl/PhotoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/Function.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/redis/RedisService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/xysy/GossipService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/xysy/GossipService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/xysy/impl/GossipServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/xysy/impl/GossipServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/ydyblog/YdyBlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/ydyblog/YdyBlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/ydyblog/impl/YdyBlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/service/ydyblog/impl/YdyBlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/service/ydyblog/ydy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/test/TestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/test/TestUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/test/doc/sql/lixianyuanorg.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/test/explain.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/util/PageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/util/PageBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/util/TimeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/util/TimeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lixianyuan/util/UUIDUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lixianyuan/util/UUIDUtil.class" afterDir="false" />
-    </list>
+    <list default="true" id="a8266f83-5c31-4843-8237-470cd69852c5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555342354208" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555342440022" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -347,12 +237,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555340647127</updated>
-      <workItem from="1555340653284" duration="1671000" />
+      <workItem from="1555340653284" duration="2043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1671000" />
+    <option name="totallyTimeSpent" value="2043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="379" y="0" width="989" height="738" extended-state="0" />
