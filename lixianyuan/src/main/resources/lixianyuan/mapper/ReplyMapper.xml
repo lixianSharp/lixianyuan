@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lixianyuan.mapper.ReplyMapper" >
+  <resultMap id="BaseResultMap" type="lixianyuan.bean.Reply" >
+    <id column="replyid" property="replyid" jdbcType="VARCHAR" />
+    <result column="replyname" property="replyname" jdbcType="VARCHAR" />
+    <result column="replycontent" property="replycontent" jdbcType="VARCHAR" />
+    <result column="replytime" property="replytime" jdbcType="TIMESTAMP" />
+    <result column="leavemsgid" property="leavemsgid" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    replyid, replyname, replycontent, replytime, leavemsgid
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="lixianyuan.bean.ReplyExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from reply
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from reply
+    where replyid = #{replyid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from reply
+    where replyid = #{replyid,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="lixianyuan.bean.ReplyExample" >
+    delete from reply
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="lixianyuan.bean.Reply" >
+    insert into reply (replyid, replyname, replycontent, 
+      replytime, leavemsgid)
+    values (#{replyid,jdbcType=VARCHAR}, #{replyname,jdbcType=VARCHAR}, #{replycontent,jdbcType=VARCHAR}, 
+      #{replytime,jdbcType=TIMESTAMP}, #{leavemsgid,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="lixianyuan.bean.Reply" >
+    insert into reply
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="replyid != null" >
+        replyid,
+      </if>
+      <if test="replyname != null" >
+        replyname,
+      </if>
+      <if test="replycontent != null" >
+        replycontent,
+      </if>
+      <if test="replytime != null" >
+        replytime,
+      </if>
+      <if test="leavemsgid != null" >
+        leavemsgid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="replyid != null" >
+        #{replyid,jdbcType=VARCHAR},
+      </if>
+      <if test="replyname != null" >
+        #{replyname,jdbcType=VARCHAR},
+      </if>
+      <if test="replycontent != null" >
+        #{replycontent,jdbcType=VARCHAR},
+      </if>
+      <if test="replytime != null" >
+        #{replytime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="leavemsgid != null" >
+        #{leavemsgid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="lixianyuan.bean.ReplyExample" resultType="java.lang.Integer" >
+    select count(*) from reply
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update reply
+    <set >
+      <if test="record.replyid != null" >
+        replyid = #{record.replyid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.replyname != null" >
+        replyname = #{record.replyname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.replycontent != null" >
+        replycontent = #{record.replycontent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.replytime != null" >
+        replytime = #{record.replytime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.leavemsgid != null" >
+        leavemsgid = #{record.leavemsgid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update reply
+    set replyid = #{record.replyid,jdbcType=VARCHAR},
+      replyname = #{record.replyname,jdbcType=VARCHAR},
+      replycontent = #{record.replycontent,jdbcType=VARCHAR},
+      replytime = #{record.replytime,jdbcType=TIMESTAMP},
+      leavemsgid = #{record.leavemsgid,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="lixianyuan.bean.Reply" >
+    update reply
+    <set >
+      <if test="replyname != null" >
+        replyname = #{replyname,jdbcType=VARCHAR},
+      </if>
+      <if test="replycontent != null" >
+        replycontent = #{replycontent,jdbcType=VARCHAR},
+      </if>
+      <if test="replytime != null" >
+        replytime = #{replytime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="leavemsgid != null" >
+        leavemsgid = #{leavemsgid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where replyid = #{replyid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lixianyuan.bean.Reply" >
+    update reply
+    set replyname = #{replyname,jdbcType=VARCHAR},
+      replycontent = #{replycontent,jdbcType=VARCHAR},
+      replytime = #{replytime,jdbcType=TIMESTAMP},
+      leavemsgid = #{leavemsgid,jdbcType=VARCHAR}
+    where replyid = #{replyid,jdbcType=VARCHAR}
+  </update>
+</mapper>
