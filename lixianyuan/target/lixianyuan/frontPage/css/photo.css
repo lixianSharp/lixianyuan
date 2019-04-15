@@ -1,0 +1,23 @@
+body {
+	background-image: url("../images/background/bg.jpg");
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3F3E3C;
+	line-height: 1.5;
+	font-size: 12px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#footer {
+	height: 35px;
+	line-height: 40px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: #ccf5f7;
+	color: black;
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 1px;
+}

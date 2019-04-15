@@ -1,0 +1,14 @@
+body{
+	background-image: url("../images/background/bg.jpg");
+}
+form{
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.leavemsgcontent{
+	width: 40%;
+}
+.confirmbtn{
+	width: 10%;
+}

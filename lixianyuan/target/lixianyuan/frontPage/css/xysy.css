@@ -1,0 +1,170 @@
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font: 12px/1.5 'Microsoft Yahei', 'Simsun';
+	color: #666666;
+	background: #fff;
+	/* 设置背景图片 */
+	background-image: url(../images/xysy/indexbgm1.jpg);
+	background-repeat:no-repeat;  
+	background-size:cover;
+}
+
+
+
+
+
+
+
+
+/* 头部信息 */
+header {
+	width: 90%;
+	margin: 20px auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#topnav {
+	width: 150px;
+	background: #48AE15;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	border-radius: 46px;
+}
+
+
+
+article {
+	width: 100%;
+	margin: 20px auto;
+}
+/*footer*/
+footer {
+	position:fixed;
+	 bottom:0;
+	background: #333;
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+.ft-copyright {
+	color: #fff;
+	line-height: 24px;
+}
+
+
+
+/*左文章列表*/
+.topnews {
+	margin: 20px 0;
+}
+
+.topnews h2 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #333;
+	border-bottom: #db6d4c 4px solid;
+}
+
+.topnews h2 b {
+	
+}
+
+.topnews h2 span {
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.topnews h2 span a {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.topnews h2 span a:hover {
+	color: #000
+}
+
+.blogs {
+	padding: 30px 0;
+	position: relative;
+	border-bottom: #CCC 1px solid;
+	overflow: hidden
+}
+
+.blogs h3 {
+	font-size: 16px;
+	font-weight: bold;
+	transition: all .5s;
+	margin-bottom: 10px
+}
+
+.blogs h3 a {
+	color: #474645;
+}
+
+.blogs h3 a:hover {
+	color: #066;
+	text-decoration: underline
+}
+
+.blogs figure {
+	float: left;
+	width: 25%;
+	overflow: hidden;
+}
+
+.blogs figure img {
+	width: 100%;
+	margin: auto;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-left: 5px;
+}
+
+.blogs figure:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+.blogs ul {
+	float: right;
+	line-height: 22px;
+	width: 72%;
+	color: #756F71;
+}
+
+.autor {
+	overflow: hidden;
+	clear: both;
+	margin: 10px 0;
+	display: inline-block;
+	color: #838383;
+	width: 100%;
+}
+
+.autor span {
+	margin: 0 10px 0 0;
+	padding-left: 20px
+}
+
+.autor span a {
+	color: #759b08;
+}
+
+.autor span a:hover {
+	text-decoration: underline
+}
+

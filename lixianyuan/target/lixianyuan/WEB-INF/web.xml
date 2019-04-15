@@ -1,0 +1,87 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>lixianyuan</display-name>
+
+
+	<!--Spring配置 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext-*.xml</param-value>
+	</context-param>
+
+
+
+	<!-- 处理POST提交乱码问题 -->
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+
+	<!-- Spring监听器 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!--MVC 前端控制器 -->
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- 默认找 /WEB-INF/[servlet的名称]-servlet.xml -->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:SpringMVC.xml</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<!-- 1. /* 拦截所有 jsp js png .css 真的全拦截 建议不使用 2. *.action *.do 拦截以do action 
+			结尾的请求 肯定能使用 ERP 3. / 拦截所有 （不包括jsp) (包含.js .png.css) 强烈建议使用 前台 面向消费者 www.jd.com/search 
+			/对静态资源放行 -->
+		<url-pattern>*.action</url-pattern>
+	</servlet-mapping>
+
+
+	<!--配置多个请求的方式 -->
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- shiro过滤器定义 -->
+	<!-- <filter> <filter-name>shiroFilter</filter-name> <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class> 
+		<init-param> <param-name>targetFilterLifecycle</param-name> <param-value>true</param-value> 
+		</init-param> </filter> <filter-mapping> <filter-name>shiroFilter</filter-name> 
+		<url-pattern>/*</url-pattern> </filter-mapping> -->
+
+	<!-- 配置主页 -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- 404页面 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.jsp</location>
+	</error-page>
+	<!-- 500页面 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500.html</location>
+	</error-page>
+
+
+</web-app>
