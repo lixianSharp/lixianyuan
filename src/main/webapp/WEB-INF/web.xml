@@ -9,6 +9,7 @@
 	<!--Spring配置 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
+		<!--配置文件的位置-->
 		<param-value>classpath:applicationContext-*.xml</param-value>
 	</context-param>
 
@@ -34,7 +35,7 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<!--MVC 前端控制器 -->
+	<!--SpringMVC 前端控制器 -->
 	<servlet>
 		<servlet-name>springmvc</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -51,7 +52,6 @@
 			/对静态资源放行 -->
 		<url-pattern>*.action</url-pattern>
 	</servlet-mapping>
-
 
 	<!--配置多个请求的方式 -->
 	<servlet-mapping>
@@ -80,7 +80,7 @@
 	<!-- 500页面 -->
 	<error-page>
 		<error-code>500</error-code>
-		<location>/500.html</location>
+		<location>/500.jsp</location>
 	</error-page>
 
 
